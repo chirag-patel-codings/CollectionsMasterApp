@@ -143,6 +143,7 @@ namespace CollectionsMasterConsoleUI
             {
                 if((numberList[i]) % 2 != 0)
                 {
+                    // numberList.Remove(numberList[i]); -- Also works...
                     numberList.RemoveAt(i);
                     i--;
                 }
@@ -208,6 +209,7 @@ namespace CollectionsMasterConsoleUI
         private static void ReverseArray(int[] array)
         {
             
+            /*
             if (array != null && array.Length > 0)
             {
                 int arrayLength = array.Length;
@@ -227,6 +229,22 @@ namespace CollectionsMasterConsoleUI
                 {
                     array[i] = reversedArray[i];
                 }
+            }
+            */
+
+            int start = 0;
+            int end = array.Length - 1;
+
+            while(start < end)
+            {
+                // Swaping the values
+                int temp = array[start];
+                array[start] = array[end];
+                array[end] = temp;
+
+                // loop again till comes to the middle region
+                start++;
+                end--;
             }
             
         }
