@@ -133,7 +133,7 @@ namespace CollectionsMasterConsoleUI
         }
 
 
-        // Removes any Odd numbers in the supplied list, which will be reflected in the calling method's list.
+        // Removes any Odd numbers in the supplied list, which will be reflected in the calling method's list...
         private static void OddKiller(List<int> numberList)
         {
 
